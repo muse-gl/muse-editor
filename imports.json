@@ -47,6 +47,7 @@
 		"js/modules/plugins.js",
 		"js/modules/fpsCounter.js",
 		"js/widgets/canvas/cameraGizmo.js",
+		"js/modules/coding.js",
 		"js/modules/generic.js",
 		"js/modules/textureTools.js",
 		"js/modules/animation.js",
