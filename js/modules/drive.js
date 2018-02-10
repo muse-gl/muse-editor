@@ -2,6 +2,8 @@
 	TODO: Local repository uses IndexedDB to store the files Blobs
 */
 
+var LoginModule = {};
+
 var DriveModule = {
 	name: "Drive",
 	bigicon: "imgs/tabicon-drive.png",

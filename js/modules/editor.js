@@ -159,15 +159,15 @@ var EditorModule = {
 			CodingModule.onNewScript(); 
 			EditorModule.refreshAttributes();
 		}});
-		mainmenu.add("Node/Create from JSON", { callback: function() { EditorModule.showCreateFromJSONDialog(); }} );
-		mainmenu.add("Node/Check JSON", { callback: function() { EditorModule.checkJSON( SelectionModule.getSelectedNode() ); }} );
+        mainmenu.add("Node/Create from JSON", { callback: function() { EditorModule.showCreateFromJSONDialog(); }} );
+        mainmenu.add("Node/Check JSON", { callback: function() { EditorModule.checkJSON( SelectionModule.getSelectedNode() ); }} );
 
-		//mainmenu.add("View/Default material properties", { callback: function() { EditorModule.inspectInDialog( LS.Renderer.default_material ); }});
-		mainmenu.add("View/Layers", { callback: function() { EditorModule.showLayersEditor(); }});
+        //mainmenu.add("View/Default material properties", { callback: function() { EditorModule.inspectInDialog( LS.Renderer.default_material ); }});
+        mainmenu.add("View/Layers", { callback: function() { EditorModule.showLayersEditor(); }});
 
-		mainmenu.add("Actions/Reload Shaders", { callback: function() { 
-			LS.ShadersManager.reloadShaders(function() { RenderModule.requestFrame(); }); 
-		}});
+        mainmenu.add("Actions/Reload Shaders", { callback: function() {
+                LS.ShadersManager.reloadShaders(function() { RenderModule.requestFrame(); });
+            }});
 
 		//mainmenu.separator("Project", 100);
 		//mainmenu.add("Project/Reset", { order: 101, callback: this.showResetDialog.bind(this) });
